@@ -179,6 +179,7 @@ useEffect(() => {
         placeholder="DD-MM-YYYY"
         value={date}
         onChange={(e) => setDate(e.target.value)}
+        style={{maxWidth:"200px"}}
       />
 
       <button className="btn main-sub" onClick={handleSubmit}>
