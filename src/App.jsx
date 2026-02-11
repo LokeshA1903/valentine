@@ -231,10 +231,10 @@ useEffect(() => {
     /* --- STATE 3: THE ORIGINAL QUESTION --- */
     <div className="card">
       <h1 className="title">
-        <span className="highlight">Aarthi,</span>
+        <span className="highlight">DhiA❤️🖤,</span>
         Will you be my Valentine? 💖💞
       </h1>
-      <p className="subtext">Choose wisely. (The "No" button is... playing hard to get.)</p>
+      
 
       <div className="btn-group">
         <button className="btn no-btn" onClick={() => setPressed(true)}>
