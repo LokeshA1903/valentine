@@ -1,6 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import confetti from 'canvas-confetti'
 import videoFile from './assets/v1.mp4'
+import cute from './assets/cute.png'
+import end from './assets/end.png'
+import pn from './assets/pn.png'
 import './App.css'
 
 function App() {
@@ -159,8 +162,8 @@ useEffect(() => {
   { final ? (
     /* --- STATE 1: THE APRIL FOOL PRANK --- */
     <div className="card success-container">
-       <img style={{ width: "156px" }} src="src/assets/end.png" alt="Cute" />
-      <h1 className="success-title">Hey Kuttachi 🖤</h1>
+       <img style={{ width: "156px" }} src={end} alt="Cute" />
+      <h1 className="success-title">My Love Letter 🖤</h1>
       <h3 className="success-tittle animate-title">
         {words.slice(0, count).join(" ")}
       </h3>
@@ -172,7 +175,7 @@ useEffect(() => {
       <h1 className="success-title">Hey Kuttachi 🖤</h1>
       <h3 className="success-tittle"> Type our first outting Date to unlock my surprise love letter</h3>
       
-      <div className="btn-group grupmani">
+      <div className="btn-group grupmani" style={{gap:"15px"}}>
       <input
         className="inputmain"
         type="text"
@@ -196,7 +199,7 @@ useEffect(() => {
     /* --- STATE 1: THE APRIL FOOL PRANK --- */
     <div className="card success-container">
       <h1 className="success-title"></h1>
-      <h3 className="success-tittle">A Happy, Memorable Day ❤️ </h3>
+      <h3 className="success-tittle">A Happy, Memorable Days ❤️ </h3>
       <video
         className="success-video"
         
@@ -217,24 +220,27 @@ useEffect(() => {
     /* --- STATE 2: THE SUCCESS MESSAGE --- */
     <div className="card success-container">
       {/* MAC FIX: Use public/cute.png if src/assets fails */}
-      <img style={{ width: "156px" }} src="src/assets/cute.png" alt="Cute" />
+      <img style={{ width: "156px" }} src={cute} alt="Cute" />
       <h1 className="success-title">Yaaahhh! Be my forever</h1>
       <h1 className="success-title">valentine!</h1>
       <h3 className="subtext">I want to show you some special moments of us ❤️</h3>
       <div className="btn-group">
         <button className="btn no-btn" onClick={() => setvideomain(true)}>
-          See the moments
+          See the moments 💕
         </button>
       </div>
     </div>
   ) : (
     /* --- STATE 3: THE ORIGINAL QUESTION --- */
     <div className="card">
-      <h1 className="title">
-        <span className="highlight">DhiA❤️🖤,</span>
-        Will you be my Valentine? 💖💞
-      </h1>
-      
+
+
+<img style={{ width: "156px" }} src={pn} alt="Cute" />
+      <p className="success-title">
+        <span className="">DhiA❤️🖤, Will you be my Valentine? 💖💞</span>
+        
+      </p>
+    
 
       <div className="btn-group">
         <button className="btn no-btn" onClick={() => setPressed(true)}>
